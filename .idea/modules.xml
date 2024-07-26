@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Scala-RockTheJVMTraining-Follow-up.iml" filepath="$PROJECT_DIR$/.idea/Scala-RockTheJVMTraining-Follow-up.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scala_Training_Exercices/Scala_Training_Exercices.iml" filepath="$PROJECT_DIR$/Scala_Training_Exercices/Scala_Training_Exercices.iml" />
     </modules>
   </component>
 </project>
