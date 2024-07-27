@@ -35,8 +35,11 @@ object HOFCurries  extends  App{
 
   def nTimesBetter (f:Int => Int, n:Int): (Int => Int) = {
 
-    if( n<=1) (x:Int) => f(x
-
+    if( n<=1) (x:Int) => f(x)
+    else (x:Int) => nTimesBetter(f, n-1)(f(x))
   }
+
+  val plus10 = nTimesBetter(plusOne, 10)
+  println(plus10(1))
 
 }
