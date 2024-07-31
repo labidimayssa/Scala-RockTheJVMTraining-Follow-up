@@ -1,0 +1,5 @@
+package ObjectOrientedProgramming
+
+object MethodNotations {
+
+}

@@ -54,12 +54,13 @@ object Functions extends App {
       else n % d != 0 && div(d - 1)
 
     }
-     div(n/2)
+
+    div(n / 2)
   }
 
   println(isPrime(37))
   println(isPrime(2003))
-  println(isPrime(37*17))
+  println(isPrime(37 * 17))
 
   /**
    * Type Inference : what the compiler knows and able to figure out when we don't specify types explicitly
@@ -70,5 +71,5 @@ object Functions extends App {
   val y = x + "Items" /* Int + String = String */
 
 
-  def succ( x:Int ) = x+1 // the compiler infers the return type from the implementation
+  def succ(x: Int) = x + 1 // the compiler infers the return type from the implementation
 }
