@@ -1,5 +1,0 @@
-package ObjectOrientedProgramming
-
-object InheritanceAndTraits {
-
-}
