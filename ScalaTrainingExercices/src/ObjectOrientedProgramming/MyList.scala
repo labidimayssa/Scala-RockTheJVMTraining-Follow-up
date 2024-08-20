@@ -1,6 +1,6 @@
 package ObjectOrientedProgramming
 
-abstract class MyList {
+ abstract class MyList {
   /*
   head = first element of the list
   tail = reminder of the list
