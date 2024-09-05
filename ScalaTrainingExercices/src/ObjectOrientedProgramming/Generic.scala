@@ -24,7 +24,9 @@ object Generic extends App {
   /** Variance problem */
   class Animal
 
-  class Cat extends Animal /** yes List[Cat] extends list [Animal] = covariance */
+  class Cat extends Animal
+
+  /** yes List[Cat] extends list [Animal] = covariance */
 
   class Dog extends Animal
 
@@ -34,9 +36,9 @@ object Generic extends App {
   val animalList: CovarianceList[Animal] = new CovarianceList[Cat]
 
   /** animalList.add(new Dog) ???, when the answer is no the problem is an invariant problem
-   * when the answer is yes that means we return a list of animals and we will use bounded Type*/
+   * when the answer is yes that means we return a list of animals and we will use bounded Type */
 
-  /**  2. NO  = INVARIANCE */
+  /** 2. NO  = INVARIANCE */
   class InvariantList[A] // Invariant list means that every type is in its own world and we cannot substitute one for other we cannot put dogs and cats together
 
   val InvariantAnimalList: InvariantList[Animal] = new InvariantList[Animal]
@@ -52,12 +54,12 @@ object Generic extends App {
 
   /** Contravariance is the opposite relation to covariance */
 
-  /** ==> We have 3 variance options : Covariance, invariance and contravariance*/
+  /** ==> We have 3 variance options : Covariance, invariance and contravariance */
 
   //bounded type
   class Cage[A <: Animal](animal: A) {
     /** Class Cage only accepts Animal subTypes and takes a parameter Animal */
-      val newCage = new Cage(new Dog)
+    val newCage = new Cage(new Dog)
 
   }
 }

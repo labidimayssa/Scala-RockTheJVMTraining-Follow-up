@@ -133,8 +133,8 @@ object listGenericTest extends App {
     override def test(elem: Int): Boolean = if (elem %2 == 0) true
     else false
   }))
-  val AnotherListOfIntegers : MyGenericList[Int]  = new ConsGeneric(4, new ConsGeneric(5, new ConsGeneric[Int](6, EmptyGeneric)))
-println(listOfIntegers ++ AnotherListOfIntegers)
+  private val anotherListOfIntegers : MyGenericList[Int]  = new ConsGeneric(4, new ConsGeneric(5, new ConsGeneric[Int](6, EmptyGeneric)))
+println(listOfIntegers ++ anotherListOfIntegers)
 
 
   println(listOfIntegers.flatMap( new MyTransformer[Int,MyGenericList[Int]] {
